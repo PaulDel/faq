@@ -20,7 +20,11 @@ gem 'rails', '3.0.5'
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
- gem 'sqlite3-ruby', :require => 'sqlite3'
+ #gem 'sqlite3-ruby', :require => 'sqlite3'
+
+ group :development, :test do # <<<< :development, not devlopment
+  gem 'sqlite3'
+end
 # gem 'aws-s3', :require => 'aws/s3'
 
 # Bundle gems for the local environment. Make sure to
